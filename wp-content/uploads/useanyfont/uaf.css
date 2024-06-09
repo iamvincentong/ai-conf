@@ -1,0 +1,10 @@
+				@font-face {
+					font-family: 'configregular';
+					src: url('./7506ConfigRegular.woff2') format('woff2'),
+						url('./7506ConfigRegular.woff') format('woff');
+					  font-display: auto;
+				}
+
+				.configregular{font-family: 'configregular' !important;}
+
+		
