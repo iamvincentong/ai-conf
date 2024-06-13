@@ -1540,6 +1540,10 @@
         .gdlr-core-type-date {
         display: none !important;
       }
+
+      .gdlr-core-hover-opacity {
+        cursor: pointer;
+      }
     </style>
   </head>
 
@@ -2642,5 +2646,21 @@
       src="./../wp-content/themes/confera/js/script-core.js?ver=1.0.0"
       id="confera-script-core-js"
     ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var hoverOpacityDiv = document.querySelector(
+          ".gdlr-core-hover-opacity"
+        );
+
+        if (hoverOpacityDiv) {
+          hoverOpacityDiv.addEventListener("click", function () {
+            var nearestAnchor = this.closest("a");
+            if (nearestAnchor) {
+              nearestAnchor.click();
+            }
+          });
+        }
+      });
+    </script>
   </body>
 </html>
