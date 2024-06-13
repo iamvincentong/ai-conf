@@ -1541,7 +1541,7 @@
         display: none !important;
       }
 
-      .gdlr-core-personnel-list-image {
+      .gdlr-core-hover-element:hover {
         cursor: pointer;
       }
     </style>
@@ -2647,19 +2647,10 @@
       id="confera-script-core-js"
     ></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var hoverImageDiv = document.querySelector(
-          ".gdlr-core-personnel-list-image"
-        );
-
-        if (hoverImageDiv) {
-          hoverImageDiv.addEventListener("click", function () {
-            var nearestAnchor = this.closest("a");
-            if (nearestAnchor) {
-              nearestAnchor.click();
-            }
-          });
-        }
+      $(document).ready(function () {
+        $(".gdlr-core-hover-element").on("click", function () {
+          $(this).find("a").first().trigger("click");
+        });
       });
     </script>
   </body>
