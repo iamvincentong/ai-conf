@@ -1541,7 +1541,7 @@
         display: none !important;
       }
 
-      .gdlr-core-hover-opacity {
+      .gdlr-core-personnel-list-image {
         cursor: pointer;
       }
     </style>
@@ -2648,12 +2648,12 @@
     ></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        var hoverOpacityDiv = document.querySelector(
-          ".gdlr-core-hover-opacity"
+        var hoverImageDiv = document.querySelector(
+          ".gdlr-core-personnel-list-image"
         );
 
-        if (hoverOpacityDiv) {
-          hoverOpacityDiv.addEventListener("click", function () {
+        if (hoverImageDiv) {
+          hoverImageDiv.addEventListener("click", function () {
             var nearestAnchor = this.closest("a");
             if (nearestAnchor) {
               nearestAnchor.click();
