@@ -1541,10 +1541,6 @@
         .gdlr-core-type-date {
         display: none !important;
       }
-
-      /* .gdlr-core-hover-element:hover {
-        cursor: pointer;
-      } */
     </style>
   </head>
 
@@ -2496,7 +2492,7 @@
                           font-size: 18px;
                           font-weight: 500;
                         "
-                        >+886-2-6605-0507 ext.16</span
+                        >+886-2-2511-2678</span
                       ><br />
                       <span
                         class="gdlr-core-space-shortcode"
@@ -2649,8 +2645,19 @@
     ></script>
     <script>
       $(document).ready(function () {
-        $(".gdlr-core-hover-element").on("click", function () {
-          $(this).find("a").first().trigger("click");
+        $(".gdlr-core-personnel-list").on("click", function () {
+          var anchor = $(this).find("a").first();
+          var prevClickHandler = anchor.data("events")?.click;
+
+          if (prevClickHandler) {
+            anchor.off("click");
+          }
+
+          anchor[0].click();
+
+          if (prevClickHandler) {
+            anchor.on("click", prevClickHandler);
+          }
         });
       });
     </script>
