@@ -1,5 +1,12 @@
+/* Speaker Page */
 @media (min-width: 768px) {
   #gdlr-core-column-2 h3.gdlr-core-title-item-title {
     font-size: 65px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .speaker-side-bar-content-2 {
+    display: none;
   }
 }
