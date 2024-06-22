@@ -1624,12 +1624,41 @@
       .gdlr-core-event-g-item .gdlr-core-infos a {
         color: #5dc69b !important;
       }
+
+      .speakers-table-list {
+        float: right;
+        width: unset;
+        text-align: unset;
+        border-spacing: 0;
+        border-collapse: unset;
+        margin-bottom: 0;
+      }
+
+      .speakers-table-list .agenda-speaker-bio {
+        margin-top: -25px !important;
+      }
+
+      .speakers-table-list tr {
+        background-color: #fff !important;
+        color: #3f403f !important;
+      }
+
+      .speakers-table-list tr td {
+        padding: 0;
+      }
+
+      @media only screen and (max-width: 767px) {
+        .speakers-table-list {
+          float: none;
+          width: 100%;
+          order: 3;
+        }
+      }
     </style>
   </head>
 
   <body
     class="page-template-default page page-id-12150 gdlr-core-body confera-body confera-body-front confera-full confera-with-sticky-navigation confera-blockquote-style-3 gdlr-core-link-to-lightbox"
-    data-home-url="https://iamvincentong.github.io/ai-conf/"
   >
     <div class="confera-mobile-header-wrap">
       <div
@@ -1869,7 +1898,7 @@
                                 >
                                   <a href="#" onclick="return false"
                                     ><img
-                                      src="../wp-content/uploads/2024/05/Epoch-150x150.jpg"
+                                      src="../assets/150x150.jpg"
                                       alt="Felix Ho"
                                       width="150"
                                       height="150"
@@ -2190,7 +2219,9 @@
                                 href="../personnel/chung-sheng-li/index.html"
                                 style="text-decoration: none"
                               >
-                                Industry Perspective
+                                Industry Perspective:<br />
+                                Challenges and Opportunities of AI-augmented
+                                Digital Transformation
                               </a>
                             </h3>
                           </div>
@@ -2325,33 +2356,204 @@
                               ><i class="icon-clock"></i>13:30 - 14:00</span
                             >
                           </div>
-                          <div class="gdlr-core-speakers gdlr-count-1 clearfix">
-                            <div class="gdlr-core-head">
-                              <div
-                                class="gdlr-core-speaker-title"
-                                style="font-weight: 800; margin-left: -10px"
-                              >
-                                6 startups
-                              </div>
-                            </div>
-                            <div class="gdlr-core-tail">
-                              <div class="gdlr-core-speaker">
+                          <!--Speakers Table-->
+                          <table class="speakers-table-list">
+                            <tr>
+                              <td>
                                 <div
-                                  class="gdlr-core-thumbnail gdlr-core-media-image"
-                                  style="margin-left: -5px"
+                                  class="gdlr-core-speakers gdlr-count-1 clearfix"
                                 >
-                                  <a href="#" onclick="return false;"
-                                    ><img
-                                      src="../wp-content/uploads/2024/05/Epoch-150x150.jpg"
-                                      alt="6 startups"
-                                      width="150"
-                                      height="150"
-                                      title="6 startups"
-                                  /></a>
+                                  <div class="gdlr-core-head">
+                                    <div
+                                      class="gdlr-core-speaker-title"
+                                      style="font-weight: 800"
+                                    >
+                                      Che-An Wu
+                                    </div>
+                                  </div>
+                                  <div class="gdlr-core-tail">
+                                    <div class="gdlr-core-speaker">
+                                      <div
+                                        class="gdlr-core-thumbnail gdlr-core-media-image"
+                                      >
+                                        <a
+                                          href="../personnel/che-an-wu/index.html"
+                                          ><img
+                                            src="../wp-content/uploads/2024/06/Che-An-Wu-150x150.jpg"
+                                            alt="Che-An Wu"
+                                            width="150"
+                                            height="150"
+                                            title="Che-An Wu"
+                                        /></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="agenda-speaker-bio">
+                                    COO and Co-founder
+                                    <span style="color: #fff"
+                                      >Empty line.
+                                    </span>
+                                  </div>
                                 </div>
-                              </div>
-                            </div>
-                          </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div
+                                  class="gdlr-core-speakers gdlr-count-1 clearfix"
+                                >
+                                  <div class="gdlr-core-head">
+                                    <div
+                                      class="gdlr-core-speaker-title"
+                                      style="font-weight: 800"
+                                    >
+                                      Vic Shen
+                                    </div>
+                                  </div>
+                                  <div class="gdlr-core-tail">
+                                    <div class="gdlr-core-speaker">
+                                      <div
+                                        class="gdlr-core-thumbnail gdlr-core-media-image"
+                                      >
+                                        <a
+                                          href="../personnel/vic-shen/index.html"
+                                          ><img
+                                            src="../wp-content/uploads/2024/06/Vic-Shen-150x150.jpg"
+                                            alt="Vic Shen"
+                                            width="150"
+                                            height="150"
+                                            title="Vic Shen"
+                                        /></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="agenda-speaker-bio">
+                                    CEO and Founder
+                                    <span style="color: #fff"
+                                      >Empty line here.
+                                    </span>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div
+                                  class="gdlr-core-speakers gdlr-count-1 clearfix"
+                                >
+                                  <div class="gdlr-core-head">
+                                    <div
+                                      class="gdlr-core-speaker-title"
+                                      style="font-weight: 800"
+                                    >
+                                      Toby Overmaat
+                                    </div>
+                                  </div>
+                                  <div class="gdlr-core-tail">
+                                    <div class="gdlr-core-speaker">
+                                      <div
+                                        class="gdlr-core-thumbnail gdlr-core-media-image"
+                                      >
+                                        <a
+                                          href="../personnel/toby-overmaat/index.html"
+                                          ><img
+                                            src="../wp-content/uploads/2024/06/Toby-Overmaat-150x150.jpg"
+                                            alt="Toby Overmaat"
+                                            width="150"
+                                            height="150"
+                                            title="Toby Overmaat"
+                                        /></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="agenda-speaker-bio">
+                                    CEO and Co-founder
+                                    <span style="color: #fff"
+                                      >Empty line.
+                                    </span>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div
+                                  class="gdlr-core-speakers gdlr-count-1 clearfix"
+                                >
+                                  <div class="gdlr-core-head">
+                                    <div
+                                      class="gdlr-core-speaker-title"
+                                      style="font-weight: 800"
+                                    >
+                                      Jerry Hung
+                                    </div>
+                                  </div>
+                                  <div class="gdlr-core-tail">
+                                    <div class="gdlr-core-speaker">
+                                      <div
+                                        class="gdlr-core-thumbnail gdlr-core-media-image"
+                                      >
+                                        <a
+                                          href="../personnel/jerry-hung/index.html"
+                                          ><img
+                                            src="../wp-content/uploads/2024/06/Jerry-Hung-150x150.jpg"
+                                            alt="Jerry Hung"
+                                            width="150"
+                                            height="150"
+                                            title="Jerry Hung"
+                                        /></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="agenda-speaker-bio">
+                                    CEO and Co-founder
+                                    <span style="color: #fff"
+                                      >Empty line.
+                                    </span>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div
+                                  class="gdlr-core-speakers gdlr-count-1 clearfix"
+                                >
+                                  <div class="gdlr-core-head">
+                                    <div
+                                      class="gdlr-core-speaker-title"
+                                      style="font-weight: 800"
+                                    >
+                                      Jeff Hu
+                                    </div>
+                                  </div>
+                                  <div class="gdlr-core-tail">
+                                    <div class="gdlr-core-speaker">
+                                      <div
+                                        class="gdlr-core-thumbnail gdlr-core-media-image"
+                                      >
+                                        <a
+                                          href="../personnel/jeff-hu/index.html"
+                                          ><img
+                                            src="../wp-content/uploads/2024/06/Jeff-Hu-150x150.jpg"
+                                            alt="Jeff Hu"
+                                            width="150"
+                                            height="150"
+                                            title="Jeff Hu"
+                                        /></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="agenda-speaker-bio">
+                                    CEO and Co-founder
+                                    <span style="color: #fff"
+                                      >Empty line.
+                                    </span>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
                           <div class="gdlr-core-content-wrap">
                             <h3 class="gdlr-core-title">
                               Startup Lightning Talk
@@ -2631,7 +2833,7 @@
                                   <a
                                     href="../personnel/kalyan-veeramachaneni/index.html"
                                     ><img
-                                      src="../wp-content/uploads/2024/05/Epoch-150x150.jpg"
+                                      src="../wp-content/uploads/2024/05/KalyanVeeramachaneni-150x150.jpg"
                                       alt="Dr. Kalyan Veeramachaneni"
                                       width="150"
                                       height="150"
@@ -2656,7 +2858,8 @@
                                 href="../personnel/kalyan-veeramachaneni/index.html"
                                 style="text-decoration: none"
                               >
-                                Keynote 5:<br />Next-Gen Data Management
+                                Keynote 5:<br />How Synthetic data created using
+                                Generative AI can help you competitively?
                               </a>
                             </h3>
                           </div>
@@ -2676,8 +2879,8 @@
                                 class="gdlr-core-speaker-title"
                                 style="font-weight: 800"
                               >
-                                Prof. Hsien-Hao <br />
-                                Sebastian Liao
+                                Prof. Sebastian<br />
+                                Hsien-hao Liao
                               </div>
                             </div>
                             <div class="gdlr-core-tail">
@@ -2686,13 +2889,13 @@
                                   class="gdlr-core-thumbnail gdlr-core-media-image"
                                 >
                                   <a
-                                    href="../personnel/prof-hsien-hao-sebastian-liao/index.html"
+                                    href="../personnel/prof-sebastian-hsien-hao-liao/index.html"
                                     ><img
                                       src="../wp-content/uploads/2024/06/HsienHao-Speaker-150x150.jpg"
-                                      alt="Prof. Hsien-Hao Sebastian Liao"
+                                      alt="Prof. Sebastian Hsien-hao Liao"
                                       width="150"
                                       height="150"
-                                      title="Prof. Hsien-Hao Sebastian Liao"
+                                      title="Prof. Sebastian Hsien-hao Liao"
                                   /></a>
                                 </div>
                               </div>
@@ -2708,7 +2911,7 @@
                           <div class="gdlr-core-content-wrap">
                             <h3 class="gdlr-core-title">
                               <a
-                                href="../personnel/prof-hsien-hao-sebastian-liao/index.html"
+                                href="../personnel/prof-sebastian-hsien-hao-liao/index.html"
                                 style="text-decoration: none"
                               >
                                 What Is Left of Humanity?<br />Creative and
@@ -2840,7 +3043,7 @@
                               >, MIT
                               <br />
                               <span style="color: #000; font-weight: 800"
-                                >Prof. Hsien-Hao Sebastian Liao</span
+                                >Prof. Sebastian Hsien-hao Liao</span
                               >, NTU
                             </div>
                           </div>
