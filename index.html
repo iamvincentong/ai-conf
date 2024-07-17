@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="profile" href="http://gmpg.org/xfn/11" />
-    <link rel="pingback" href="./xmlrpc.php" />
+    <link rel="pingback" href="/xmlrpc.php" />
+
     <!--META INFORMATION-->
     <meta property="og:title" content="Generative AI Shapes the Future" />
     <meta
@@ -30,7 +31,7 @@
       rel="alternate"
       type="application/rss+xml"
       title="Generative AI Shapes the Future &raquo; Feed"
-      href="./feed/index.html"
+      href="./feed/"
     />
     <link
       rel="alternate"
@@ -38,7 +39,6 @@
       title="Generative AI Shapes the Future &raquo; Comments Feed"
       href="./comments/feed/index.html"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript">
       /* <![CDATA[ */
       window._wpemojiSettings = {
@@ -47,8 +47,7 @@
         svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
         svgExt: ".svg",
         source: {
-          concatemoji:
-            ".\/\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.5.4",
+          concatemoji: ".\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6",
         },
       };
       /*! This file is auto-generated */
@@ -202,7 +201,7 @@
     <link
       rel="stylesheet"
       id="wp-block-library-css"
-      href="./wp-includes/css/dist/block-library/style.min.css?ver=6.5.4"
+      href="./wp-includes/css/dist/block-library/style.min.css?ver=6.6"
       type="text/css"
       media="all"
     />
@@ -224,7 +223,14 @@
       }
     </style>
     <style id="global-styles-inline-css" type="text/css">
-      body {
+      :root {
+        --wp--preset--aspect-ratio--square: 1;
+        --wp--preset--aspect-ratio--4-3: 4/3;
+        --wp--preset--aspect-ratio--3-4: 3/4;
+        --wp--preset--aspect-ratio--3-2: 3/2;
+        --wp--preset--aspect-ratio--2-3: 2/3;
+        --wp--preset--aspect-ratio--16-9: 16/9;
+        --wp--preset--aspect-ratio--9-16: 9/16;
         --wp--preset--color--black: #000000;
         --wp--preset--color--cyan-bluish-gray: #abb8c3;
         --wp--preset--color--white: #ffffff;
@@ -331,17 +337,17 @@
       body .is-layout-flex {
         display: flex;
       }
-      body .is-layout-flex {
+      .is-layout-flex {
         flex-wrap: wrap;
         align-items: center;
       }
-      body .is-layout-flex > * {
+      .is-layout-flex > :is(*, div) {
         margin: 0;
       }
       body .is-layout-grid {
         display: grid;
       }
-      body .is-layout-grid > * {
+      .is-layout-grid > :is(*, div) {
         margin: 0;
       }
       :where(.wp-block-columns.is-layout-flex) {
@@ -530,9 +536,6 @@
       .has-x-large-font-size {
         font-size: var(--wp--preset--font-size--x-large) !important;
       }
-      .wp-block-navigation a:where(:not(.wp-element-button)) {
-        color: inherit;
-      }
       :where(.wp-block-post-template.is-layout-flex) {
         gap: 1.25em;
       }
@@ -545,7 +548,7 @@
       :where(.wp-block-columns.is-layout-grid) {
         gap: 2em;
       }
-      .wp-block-pullquote {
+      :root :where(.wp-block-pullquote) {
         font-size: 1.5em;
         line-height: 1.6;
       }
@@ -553,7 +556,7 @@
     <link
       rel="stylesheet"
       id="contact-form-7-css"
-      href="./wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.9.5"
+      href="./wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.9.7"
       type="text/css"
       media="all"
     />
@@ -567,42 +570,42 @@
     <link
       rel="stylesheet"
       id="gdlr-core-google-font-css"
-      href="https://fonts.googleapis.com/css?family=Playfair+Display%3Aregular%2C500%2C600%2C700%2C800%2C900%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CJost%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic&#038;subset=cyrillic%2Clatin%2Clatin-ext%2Cvietnamese&#038;ver=6.5.4"
+      href="https://fonts.googleapis.com/css?family=Playfair+Display%3Aregular%2C500%2C600%2C700%2C800%2C900%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CJost%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic&#038;subset=cyrillic%2Clatin%2Clatin-ext%2Cvietnamese&#038;ver=6.6"
       type="text/css"
       media="all"
     />
     <link
       rel="stylesheet"
       id="font-awesome-css"
-      href="./wp-content/plugins/goodlayers-core/plugins/fontawesome/font-awesome.css?ver=6.5.4"
+      href="./wp-content/plugins/goodlayers-core/plugins/fontawesome/font-awesome.css?ver=6.6"
       type="text/css"
       media="all"
     />
     <link
       rel="stylesheet"
       id="fa5-css"
-      href="./wp-content/plugins/goodlayers-core/plugins/fa5/fa5.css?ver=6.5.4"
+      href="./wp-content/plugins/goodlayers-core/plugins/fa5/fa5.css?ver=6.6"
       type="text/css"
       media="all"
     />
     <link
       rel="stylesheet"
       id="elegant-font-css"
-      href="./wp-content/plugins/goodlayers-core/plugins/elegant/elegant-font.css?ver=6.5.4"
+      href="./wp-content/plugins/goodlayers-core/plugins/elegant/elegant-font.css?ver=6.6"
       type="text/css"
       media="all"
     />
     <link
       rel="stylesheet"
       id="ionicons-css"
-      href="./wp-content/plugins/goodlayers-core/plugins/ionicons/ionicons.css?ver=6.5.4"
+      href="./wp-content/plugins/goodlayers-core/plugins/ionicons/ionicons.css?ver=6.6"
       type="text/css"
       media="all"
     />
     <link
       rel="stylesheet"
       id="simple-line-icons-css"
-      href="./wp-content/plugins/goodlayers-core/plugins/simpleline/simpleline.css?ver=6.5.4"
+      href="./wp-content/plugins/goodlayers-core/plugins/simpleline/simpleline.css?ver=6.6"
       type="text/css"
       media="all"
     />
@@ -616,7 +619,7 @@
     <link
       rel="stylesheet"
       id="gdlr-core-page-builder-css"
-      href="./wp-content/plugins/goodlayers-core/include/css/page-builder.css?ver=6.5.4"
+      href="./wp-content/plugins/goodlayers-core/include/css/page-builder.css?ver=6.6"
       type="text/css"
       media="all"
     />
@@ -630,21 +633,21 @@
     <link
       rel="stylesheet"
       id="uaf_client_css-css"
-      href="./wp-content/uploads/useanyfont/uaf.css?ver=1717002344"
+      href="./wp-content/uploads/useanyfont/uaf.css?ver=1721190572"
       type="text/css"
       media="all"
     />
     <link
       rel="stylesheet"
       id="confera-style-core-css"
-      href="./wp-content/themes/confera/css/style-core.css?ver=6.5.4"
+      href="./wp-content/themes/confera/css/style-core.css?ver=6.6"
       type="text/css"
       media="all"
     />
     <link
       rel="stylesheet"
       id="confera-custom-style-css"
-      href="./wp-content/uploads/confera-style-custom.css?1717078716#038;ver=6.5.4"
+      href="./wp-content/uploads/confera-style-custom.css?1717078716#038;ver=6.6"
       type="text/css"
       media="all"
     />
@@ -675,34 +678,37 @@
     <!--[if lt IE 9]>
       <script
         type="text/javascript"
-        src="./wp-content/themes/confera/js/html5.js?ver=6.5.4"
+        src="./wp-content/themes/confera/js/html5.js?ver=6.6"
         id="html5js-js"
       ></script>
     <![endif]-->
-    <link rel="https://api.w.org/" href="./wp-json/index.html" />
+    <link rel="https://api.w.org/" href="./wp-json/" />
     <link
       rel="alternate"
+      title="JSON"
       type="application/json"
-      href="./wp-json/wp/v2/pages/11399/index.html"
+      href="./wp-json/wp/v2/pages/11399"
     />
     <link
       rel="EditURI"
       type="application/rsd+xml"
       title="RSD"
-      href="./xmlrpc.php?rsd"
+      href="/xmlrpc.php?rsd"
     />
-    <meta name="generator" content="WordPress 6.5.4" />
-    <link rel="canonical" href="./index.html" />
-    <link rel="shortlink" href="./index.html" />
+    <meta name="generator" content="WordPress 6.6" />
+    <link rel="canonical" href="/" />
+    <link rel="shortlink" href="/" />
     <link
       rel="alternate"
+      title="oEmbed (JSON)"
       type="application/json+oembed"
-      href="./wp-json/oembed/1.0/embed/index.html?url=http%3A%2F%2F%2F"
+      href="./wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F"
     />
     <link
       rel="alternate"
+      title="oEmbed (XML)"
       type="text/xml+oembed"
-      href="./wp-json/oembed/1.0/embed/index.html?url=http%3A%2F%2F%2F#038;format=xml"
+      href="./wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F#038;format=xml"
     />
     <style>
       @media only screen and (max-width: 767px) {
@@ -799,7 +805,7 @@
         .gdlr-core-pbf-column-content-margin
         .gdlr-core-pbf-background-wrap {
       }
-      #gdlr-core-event-g-76182.gdlr-core-event-g-item .gdlr-core-infos {
+      #gdlr-core-event-g-63858.gdlr-core-event-g-item .gdlr-core-infos {
         color: #000000;
       }
       #gdlr-core-event-g-76182.gdlr-core-event-g-item .gdlr-core-infos a {
@@ -838,16 +844,13 @@
       SR7.E ??= {};
       SR7.E.gAddons ??= {};
       SR7.E.php ??= {};
-      SR7.E.nonce = "6836ed97a3";
-      SR7.E.ajaxurl =
-        "https://iamvincentong.github.io/ai-conf/wp-admin/admin-ajax.php";
-      SR7.E.resturl = "https://iamvincentong.github.io/ai-conf/wp-json/";
+      SR7.E.nonce = "9f86209d60";
+      SR7.E.ajaxurl = "./wp-admin/admin-ajax.php";
+      SR7.E.resturl = "./wp-json/";
       SR7.E.slug_path = "revslider/revslider.php";
       SR7.E.slug = "revslider";
-      SR7.E.plugin_url =
-        "https://iamvincentong.github.io/ai-conf/wp-content/plugins/revslider/";
-      SR7.E.wp_plugin_url =
-        "https://iamvincentong.github.io/ai-conf/wp-content/plugins/";
+      SR7.E.plugin_url = "./wp-content/plugins/revslider/";
+      SR7.E.wp_plugin_url = "./wp-content/plugins/";
       SR7.E.revision = "6.7.12";
       SR7.E.fontBaseUrl = "//fonts.googleapis.com/css2?family=";
       SR7.G.breakPoints = [1240, 1024, 778, 480];
@@ -1726,6 +1729,7 @@
 
   <body
     class="home page-template-default page page-id-11399 gdlr-core-body confera-body confera-body-front confera-full confera-with-sticky-navigation confera-blockquote-style-3 gdlr-core-link-to-lightbox"
+    data-home-url="./"
   >
     <div class="confera-mobile-header-wrap">
       <div
@@ -1735,27 +1739,27 @@
         <div class="confera-mobile-header-container confera-container clearfix">
           <div class="confera-logo confera-item-pdlr">
             <div class="confera-logo-inner">
-              <a class="confera-fixed-nav-logo" href="./index.html"
+              <a class="confera-fixed-nav-logo" href="./"
                 ><img
                   src="./wp-content/uploads/2024/05/TaiwanSymposium_2024_Website_Logo_Black.png"
                   alt=""
                   width="2001"
                   height="250"
-                  title="TaiwanSymposium_2024_Website_Logo_Black"
+                  title="Generative AI Shapes the Future"
                   srcset="
-                    ./wp-content/uploads/2024/05/TaiwanSymposium_2024_Website_Logo_Black.png 1x,
-                    ./wp-content/uploads/2024/05/TaiwanSymposium_2024_Website_Logo_Black.png 2x
+                    /wp-content/uploads/2024/05/TaiwanSymposium_2024_Website_Logo_Black.png 1x,
+                    /wp-content/uploads/2024/05/TaiwanSymposium_2024_Website_Logo_Black.png 2x
                   " /></a
-              ><a class="confera-orig-logo" href="./index.html"
+              ><a class="confera-orig-logo" href="./"
                 ><img
                   src="./wp-content/uploads/2024/05/TaiwanSymposium_2024_Website_Logo_Black.png"
                   alt=""
                   width="2001"
                   height="250"
-                  title="TaiwanSymposium_2024_Website_Logo_Black"
+                  title="Generative AI Shapes the Future"
                   srcset="
-                    ./wp-content/uploads/2024/05/TaiwanSymposium_2024_Website_Logo_Black.png 1x,
-                    ./wp-content/uploads/2024/05/TaiwanSymposium_2024_Website_Logo_Black.png 2x
+                    /wp-content/uploads/2024/05/TaiwanSymposium_2024_Website_Logo_Black.png 1x,
+                    /wp-content/uploads/2024/05/TaiwanSymposium_2024_Website_Logo_Black.png 2x
                   "
               /></a>
             </div>
@@ -1778,22 +1782,22 @@
                       <li
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11399 current_page_item menu-item-11470"
                       >
-                        <a href="./index.html" aria-current="page">Home</a>
+                        <a href="./" aria-current="page">Home</a>
                       </li>
                       <li
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12144"
                       >
-                        <a href="./about-us/index.html">About Us</a>
+                        <a href="./about-us/">About Us</a>
                       </li>
                       <li
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12335"
                       >
-                        <a href="./agenda/index.html">Agenda</a>
+                        <a href="./agenda/">Agenda</a>
                       </li>
                       <li
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12336"
                       >
-                        <a href="./speakers/index.html">Speakers</a>
+                        <a href="./speakers/">Speakers</a>
                       </li>
                     </ul>
                   </div>
@@ -1818,27 +1822,27 @@
               <div class="confera-header-container-inner clearfix">
                 <div class="confera-logo confera-item-pdlr">
                   <div class="confera-logo-inner">
-                    <a class="confera-fixed-nav-logo" href="./index.html"
+                    <a class="confera-fixed-nav-logo" href="./"
                       ><img
                         src="./wp-content/uploads/2024/05/TaiwanSymposium_2024_Website_Logo_Black.png"
                         alt=""
                         width="2001"
                         height="250"
-                        title="TaiwanSymposium_2024_Website_Logo_Black"
+                        title="Generative AI Shapes the Future"
                         srcset="
-                          ./wp-content/uploads/2024/05/TaiwanSymposium_2024_Website_Logo_Black.png 1x,
-                          ./wp-content/uploads/2024/05/TaiwanSymposium_2024_Website_Logo_Black.png 2x
+                          /wp-content/uploads/2024/05/TaiwanSymposium_2024_Website_Logo_Black.png 1x,
+                          /wp-content/uploads/2024/05/TaiwanSymposium_2024_Website_Logo_Black.png 2x
                         " /></a
-                    ><a class="confera-orig-logo" href="./index.html"
+                    ><a class="confera-orig-logo" href="./"
                       ><img
                         src="./wp-content/uploads/2024/05/TaiwanSymposium_2024_Website_Logo_Black.png"
                         alt=""
                         width="2001"
                         height="250"
-                        title="TaiwanSymposium_2024_Website_Logo_Black"
+                        title="Generative AI Shapes the Future"
                         srcset="
-                          ./wp-content/uploads/2024/05/TaiwanSymposium_2024_Website_Logo_Black.png 1x,
-                          ./wp-content/uploads/2024/05/TaiwanSymposium_2024_Website_Logo_Black.png 2x
+                          /wp-content/uploads/2024/05/TaiwanSymposium_2024_Website_Logo_Black.png 1x,
+                          /wp-content/uploads/2024/05/TaiwanSymposium_2024_Website_Logo_Black.png 2x
                         "
                     /></a>
                   </div>
@@ -1849,22 +1853,22 @@
                       <li
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11399 current_page_item menu-item-11470 confera-normal-menu"
                       >
-                        <a href="./index.html">Home</a>
+                        <a href="./">Home</a>
                       </li>
                       <li
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12144 confera-normal-menu"
                       >
-                        <a href="./about-us/index.html">About Us</a>
+                        <a href="./about-us/">About Us</a>
                       </li>
                       <li
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12335 confera-normal-menu"
                       >
-                        <a href="./agenda/index.html">Agenda</a>
+                        <a href="./agenda/">Agenda</a>
                       </li>
                       <li
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12336 confera-normal-menu"
                       >
-                        <a href="./speakers/index.html">Speakers</a>
+                        <a href="./speakers/">Speakers</a>
                       </li>
                     </ul>
                     <div
@@ -1905,10 +1909,10 @@
                         <sr7-adjuster></sr7-adjuster>
                         <sr7-content>
                           <sr7-slide id="SR7_2_1-3" data-key="3">
-                            <sr7-bg id="SR7_2_1-3-11" class="sr7-layer"
+                            <sr7-bg id="SR7_2_1-3-13" class="sr7-layer"
                               ><noscript
                                 ><img
-                                  src="./wp-content/uploads/2024/06/TaiwanSymposium_2024_Website_Banner_FA_Home_Desktop.png"
+                                  src="./wp-content/uploads/2024/07/banner-bg.png"
                                   alt=""
                                   title="Epoch &#8211; Generative AI Shapes the Future" /></noscript
                             ></sr7-bg>
@@ -2003,13 +2007,31 @@
                             data-dbsrc="Ly9lcG9jaGNvbmYubG9jYWwvd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDcvQ0RJQi5wbmc="
                           />
                           <img
-                            data-src="./wp-content/uploads/2024/06/TaiwanSymposium_2024_Website_Banner_FA_Home_Desktop.png"
-                            data-libid="12712"
+                            data-src="./wp-content/uploads/2024/07/TIER.png"
+                            data-libid="12771"
+                            data-lib="medialibrary"
+                            title="TIER"
+                            width="0"
+                            height="0"
+                            data-dbsrc="Ly9lcG9jaGNvbmYubG9jYWwvd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDcvVElFUi5wbmc="
+                          />
+                          <img
+                            data-src="./wp-content/uploads/2024/07/banner-title.png"
+                            data-libid="12782"
                             data-lib="medialibrary"
                             title="Epoch &#8211; Generative AI Shapes the Future"
                             width="0"
                             height="0"
-                            data-dbsrc="Ly9lcG9jaGNvbmYubG9jYWwvd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDYvVGFpd2FuU3ltcG9zaXVtXzIwMjRfV2Vic2l0ZV9CYW5uZXJfRkFfSG9tZV9EZXNrdG9wLnBuZw=="
+                            data-dbsrc="Ly9lcG9jaGNvbmYubG9jYWwvd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDcvYmFubmVyLXRpdGxlLnBuZw=="
+                          />
+                          <img
+                            data-src="./wp-content/uploads/2024/07/banner-bg.png"
+                            data-libid="12781"
+                            data-lib="medialibrary"
+                            title="Epoch &#8211; Generative AI Shapes the Future"
+                            width="0"
+                            height="0"
+                            data-dbsrc="Ly9lcG9jaGNvbmYubG9jYWwvd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDcvYmFubmVyLWJnLnBuZw=="
                           />
                         </image_lists>
                       </sr7-module>
@@ -5037,7 +5059,7 @@
         .gdlr-core-pbf-column-content-margin
         .gdlr-core-pbf-background-wrap {
       }
-      #gdlr-core-event-g-63639.gdlr-core-event-g-item .gdlr-core-infos {
+      #gdlr-core-event-g-4597.gdlr-core-event-g-item .gdlr-core-infos {
         color: #000000;
       }
       #gdlr-core-event-g-63639.gdlr-core-event-g-item .gdlr-core-infos a {
@@ -5069,24 +5091,39 @@
     </script>
     <script
       type="text/javascript"
-      src="./wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.9.5"
+      src="./wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18"
+      id="wp-hooks-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6"
+      id="wp-i18n-js"
+    ></script>
+    <script type="text/javascript" id="wp-i18n-js-after">
+      /* <![CDATA[ */
+      wp.i18n.setLocaleData({ "text directionltr": ["ltr"] });
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="./wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.9.7"
       id="swv-js"
     ></script>
     <script type="text/javascript" id="contact-form-7-js-extra">
       /* <![CDATA[ */
       var wpcf7 = {
-        api: { root: ".\/\/wp-json\/", namespace: "contact-form-7\/v1" },
+        api: { root: ".\/wp-json\/", namespace: "contact-form-7\/v1" },
       };
       /* ]]> */
     </script>
     <script
       type="text/javascript"
-      src="./wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.9.5"
+      src="./wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.9.7"
       id="contact-form-7-js"
     ></script>
     <script
       type="text/javascript"
-      src="./wp-content/plugins/goodlayers-core-event/goodlayers-core-event.js?ver=6.5.4"
+      src="./wp-content/plugins/goodlayers-core-event/goodlayers-core-event.js?ver=6.6"
       id="gdlr-core-event-script-js"
     ></script>
     <script
@@ -5099,7 +5136,7 @@
       var gdlr_core_pbf = {
         admin: "",
         video: { width: "640", height: "360" },
-        ajax_url: ".\/\/wp-admin\/admin-ajax.php",
+        ajax_url: ".\/wp-admin\/admin-ajax.php",
       };
       /* ]]> */
     </script>
@@ -5110,7 +5147,7 @@
     ></script>
     <script
       type="text/javascript"
-      src="./wp-includes/js/jquery/ui/effect.min.js?ver=1.13.2"
+      src="./wp-includes/js/jquery/ui/effect.min.js?ver=1.13.3"
       id="jquery-effects-core-js"
     ></script>
     <script
@@ -5208,7 +5245,7 @@
           nav: { s: { use: true }, p: { w: 50, h: 100 } },
           thumb: {
             image: {
-              src: ".\/\/wp-content\/uploads\/2024\/06\/TaiwanSymposium_2024_Website_Banner_FA_Home_Desktop.png",
+              src: ".\/wp-content\/uploads\/2024\/07\/banner-bg.png",
               repeat: "",
               size: "cover",
               pos: { x: "50%", y: "50%" },
@@ -5219,47 +5256,57 @@
             {
               lib_id: 12511,
               lib: "medialibrary",
-              src: ".\/\/wp-content\/uploads\/2024\/05\/NDC.png",
+              src: ".\/wp-content\/uploads\/2024\/05\/NDC.png",
             },
             {
               lib_id: 12512,
               lib: "medialibrary",
-              src: ".\/\/wp-content\/uploads\/2024\/05\/QuantaComputer.png",
+              src: ".\/wp-content\/uploads\/2024\/05\/QuantaComputer.png",
             },
             {
               lib_id: 12513,
               lib: "medialibrary",
-              src: ".\/\/wp-content\/uploads\/2024\/05\/QuantaResearch.png",
+              src: ".\/wp-content\/uploads\/2024\/05\/QuantaResearch.png",
             },
             {
               lib_id: 12509,
               lib: "medialibrary",
-              src: ".\/\/wp-content\/uploads\/2024\/05\/Epoch.png",
+              src: ".\/wp-content\/uploads\/2024\/05\/Epoch.png",
             },
             {
               lib_id: 12510,
               lib: "medialibrary",
-              src: ".\/\/wp-content\/uploads\/2024\/05\/MITILP.png",
+              src: ".\/wp-content\/uploads\/2024\/05\/MITILP.png",
             },
             {
               lib_id: 12714,
               lib: "medialibrary",
-              src: ".\/\/wp-content\/uploads\/2024\/06\/StartupIsland.png",
+              src: ".\/wp-content\/uploads\/2024\/06\/StartupIsland.png",
             },
             {
               lib_id: 12713,
               lib: "medialibrary",
-              src: ".\/\/wp-content\/uploads\/2024\/06\/ASVDA.png",
+              src: ".\/wp-content\/uploads\/2024\/06\/ASVDA.png",
             },
             {
               lib_id: 12768,
               lib: "medialibrary",
-              src: ".\/\/wp-content\/uploads\/2024\/07\/CDIB.png",
+              src: ".\/wp-content\/uploads\/2024\/07\/CDIB.png",
             },
             {
-              lib_id: 12712,
+              lib_id: 12771,
               lib: "medialibrary",
-              src: ".\/\/wp-content\/uploads\/2024\/06\/TaiwanSymposium_2024_Website_Banner_FA_Home_Desktop.png",
+              src: ".\/wp-content\/uploads\/2024\/07\/TIER.png",
+            },
+            {
+              lib_id: 12782,
+              lib: "medialibrary",
+              src: ".\/wp-content\/uploads\/2024\/07\/banner-title.png",
+            },
+            {
+              lib_id: 12781,
+              lib: "medialibrary",
+              src: ".\/wp-content\/uploads\/2024\/07\/banner-bg.png",
             },
           ],
           version: "",
@@ -5295,7 +5342,7 @@
                 dimension: "slider",
                 default: {
                   image: {
-                    src: ".\/\/wp-content\/uploads\/2024\/06\/TaiwanSymposium_2024_Website_Banner_FA_Home_Desktop.png",
+                    src: ".\/wp-content\/uploads\/2024\/07\/banner-bg.png",
                     repeat: "",
                     size: "cover",
                     pos: { x: "50%", y: "50%" },
@@ -5338,14 +5385,14 @@
                 },
                 pos: {
                   x: ["477px", "477px", "369px", "255px", "auto"],
-                  y: ["572px", "572px", "431px", "384px", "266px"],
+                  y: ["572px", "572px", "431px", "385px", "266px"],
                   h: ["left", "left", "left", "left", "center"],
                   pos: "absolute",
                   float: ["none", "none", "none", "none", "none"],
                   clear: ["none", "none", "none", "none", "none"],
                 },
-                zIndex: 7,
-                order: 7,
+                zIndex: 8,
+                order: 8,
                 display: ["block", "block", "block", "block", "block"],
                 vA: "top",
                 bg: {
@@ -5442,11 +5489,11 @@
                 color: ["#000000", "#000000", "#000000", "#000000", "#000000"],
                 font: {
                   family: "'Noto Sans TC'",
-                  size: ["35px", "35px", "30px", "28px", "20px"],
+                  size: ["35", "35", "30px", "28px", "20px"],
                   weight: ["600", "600", "600", "600", "600"],
                   ls: [0, 0, 0, 0, "1px"],
                 },
-                lh: ["30px", "30px", "30px", "30px", "30px"],
+                lh: ["30", "30", "30", "30", "30"],
                 type: "text",
                 toggle: { text: "" },
               },
@@ -5462,15 +5509,15 @@
                   minH: ["none", "none", "none", "none", "none"],
                 },
                 pos: {
-                  x: ["503px", "503px", "388px", "276px", "auto"],
-                  y: ["483px", "483px", "353px", "315px", "218px"],
+                  x: ["500px", "500px", "388px", "276px", "auto"],
+                  y: ["506px", "506px", "374px", "335px", "226px"],
                   h: ["left", "left", "left", "left", "center"],
                   pos: "absolute",
                   float: ["none", "none", "none", "none", "none"],
                   clear: ["none", "none", "none", "none", "none"],
                 },
-                zIndex: 6,
-                order: 6,
+                zIndex: 7,
+                order: 7,
                 display: ["block", "block", "block", "block", "block"],
                 vA: "top",
                 bg: {
@@ -5580,257 +5627,20 @@
                 id: 2,
                 alias: "Image-2",
                 content: {
-                  src: ".\/\/wp-content\/uploads\/2024\/05\/NDC.png",
+                  src: ".\/wp-content\/uploads\/2024\/05\/NDC.png",
                   lib: "medialibrary",
                   lib_id: 12511,
-                  size: "contain",
                 },
                 size: {
-                  w: ["140px", "140px", "112px", "113px", "79px"],
-                  h: ["28px", "28px", "22px", "23px", "16px"],
+                  w: ["124px", "124px", "117px", "113px", "83px"],
+                  h: ["25px", "25px", "24px", "23px", "17px"],
                   minW: ["none", "none", "none", "none", "none"],
                   minH: ["none", "none", "none", "none", "none"],
                   sProp: true,
                 },
                 pos: {
-                  x: ["434px", "434px", "327px", "202px", "106px"],
-                  y: ["928px", "928px", "713px", "656px", "464px"],
-                  pos: "absolute",
-                  float: ["none", "none", "none", "none", "none"],
-                  clear: ["none", "none", "none", "none", "none"],
-                },
-                zIndex: 11,
-                order: 11,
-                display: ["block", "block", "block", "block", "block"],
-                vA: "top",
-                bg: {
-                  color: {
-                    orig: "transparent",
-                    type: "solid",
-                    string: "transparent",
-                  },
-                },
-                attr: { aO: "ml", tO: "ml" },
-                tl: {
-                  in: {
-                    content: {
-                      pers: "600px",
-                      orig: { x: "50%", y: "50%", z: "0" },
-                      all: [
-                        {
-                          t: 0,
-                          d: 0,
-                          f: 0,
-                          e: "power3.inOut",
-                          pE: "d",
-                          x: [0, 0, 0, 0, 0],
-                          y: [0, 0, 0, 0, 0],
-                          o: 0,
-                          xRe: 0,
-                          yRe: 0,
-                          off: 0,
-                        },
-                        {
-                          t: 1500,
-                          d: 300,
-                          f: 300,
-                          e: "power3.inOut",
-                          pE: "d",
-                          x: [0, 0, 0, 0, 0],
-                          y: [0, 0, 0, 0, 0],
-                          o: 1,
-                          xRe: 0,
-                          yRe: 0,
-                          off: 0,
-                        },
-                      ],
-                    },
-                  },
-                  out: {
-                    content: {
-                      pers: "600px",
-                      orig: { x: "50%", y: "50%", z: "0" },
-                      all: [
-                        {
-                          t: 0,
-                          d: 300,
-                          f: 300,
-                          e: "power3.inOut",
-                          pE: "n",
-                          x: [
-                            "inherit",
-                            "inherit",
-                            "inherit",
-                            "inherit",
-                            "inherit",
-                          ],
-                          y: [
-                            "inherit",
-                            "inherit",
-                            "inherit",
-                            "inherit",
-                            "inherit",
-                          ],
-                          o: 0,
-                          xRe: 0,
-                          yRe: 0,
-                          off: 0,
-                        },
-                      ],
-                    },
-                  },
-                },
-                p: {
-                  t: [0, 0, 0, 0, 0],
-                  b: [0, 0, 0, 0, 0],
-                  l: [0, 0, 0, 0, 0],
-                  r: [0, 0, 0, 0, 0],
-                },
-                m: {
-                  t: [0, 0, 0, 0, 0],
-                  b: [0, 0, 0, 0, 0],
-                  l: [0, 0, 0, 0, 0],
-                  r: [0, 0, 0, 0, 0],
-                },
-                type: "image",
-              },
-              {
-                fluid: { tx: true, tr: true, sp: true },
-                id: 3,
-                alias: "Image-3",
-                content: {
-                  src: ".\/\/wp-content\/uploads\/2024\/05\/QuantaComputer.png",
-                  lib: "medialibrary",
-                  lib_id: 12512,
-                },
-                size: {
-                  w: ["56px", "56px", "58px", "54px", "40px"],
-                  h: ["40px", "40px", "42px", "39px", "29px"],
-                  minW: ["none", "none", "none", "none", "none"],
-                  minH: ["none", "none", "none", "none", "none"],
-                  sProp: true,
-                },
-                pos: {
-                  x: ["634px", "634px", "487px", "362px", "225px"],
-                  y: ["851px", "851px", "648px", "595px", "416px"],
-                  pos: "absolute",
-                  float: ["none", "none", "none", "none", "none"],
-                  clear: ["none", "none", "none", "none", "none"],
-                },
-                zIndex: 12,
-                order: 12,
-                display: ["block", "block", "block", "block", "block"],
-                vA: "top",
-                bg: {
-                  color: {
-                    orig: "transparent",
-                    type: "solid",
-                    string: "transparent",
-                  },
-                },
-                attr: { aO: "ml", tO: "ml" },
-                tl: {
-                  in: {
-                    content: {
-                      pers: "600px",
-                      orig: { x: "50%", y: "50%", z: "0" },
-                      all: [
-                        {
-                          t: 0,
-                          d: 0,
-                          f: 0,
-                          e: "power3.inOut",
-                          pE: "d",
-                          x: [0, 0, 0, 0, 0],
-                          y: [0, 0, 0, 0, 0],
-                          o: 0,
-                          xRe: 0,
-                          yRe: 0,
-                          off: 0,
-                        },
-                        {
-                          t: 1500,
-                          d: 300,
-                          f: 300,
-                          e: "power3.inOut",
-                          pE: "d",
-                          x: [0, 0, 0, 0, 0],
-                          y: [0, 0, 0, 0, 0],
-                          o: 1,
-                          xRe: 0,
-                          yRe: 0,
-                          off: 0,
-                        },
-                      ],
-                    },
-                  },
-                  out: {
-                    content: {
-                      pers: "600px",
-                      orig: { x: "50%", y: "50%", z: "0" },
-                      all: [
-                        {
-                          t: 0,
-                          d: 300,
-                          f: 300,
-                          e: "power3.inOut",
-                          pE: "n",
-                          x: [
-                            "inherit",
-                            "inherit",
-                            "inherit",
-                            "inherit",
-                            "inherit",
-                          ],
-                          y: [
-                            "inherit",
-                            "inherit",
-                            "inherit",
-                            "inherit",
-                            "inherit",
-                          ],
-                          o: 0,
-                          xRe: 0,
-                          yRe: 0,
-                          off: 0,
-                        },
-                      ],
-                    },
-                  },
-                },
-                p: {
-                  t: [0, 0, 0, 0, 0],
-                  b: [0, 0, 0, 0, 0],
-                  l: [0, 0, 0, 0, 0],
-                  r: [0, 0, 0, 0, 0],
-                },
-                m: {
-                  t: [0, 0, 0, 0, 0],
-                  b: [0, 0, 0, 0, 0],
-                  l: [0, 0, 0, 0, 0],
-                  r: [0, 0, 0, 0, 0],
-                },
-                type: "image",
-              },
-              {
-                fluid: { tx: true, tr: true, sp: true },
-                id: 4,
-                alias: "Image-4",
-                content: {
-                  src: ".\/\/wp-content\/uploads\/2024\/05\/QuantaResearch.png",
-                  lib: "medialibrary",
-                  lib_id: 12513,
-                },
-                size: {
-                  w: ["60px", "60px", "53px", "49px", "42px"],
-                  h: ["33px", "33px", "29px", "27px", "23px"],
-                  minW: ["none", "none", "none", "none", "none"],
-                  minH: ["none", "none", "none", "none", "none"],
-                  sProp: true,
-                },
-                pos: {
-                  x: ["745px", "745px", "583px", "458px", "302px"],
-                  y: ["857px", "857px", "655px", "601px", "421px"],
+                  x: ["471px", "471px", "312px", "202px", "92px"],
+                  y: ["785px", "785px", "719px", "655px", "461px"],
                   pos: "absolute",
                   float: ["none", "none", "none", "none", "none"],
                   clear: ["none", "none", "none", "none", "none"],
@@ -5932,23 +5742,23 @@
               },
               {
                 fluid: { tx: true, tr: true, sp: true },
-                id: 5,
-                alias: "Image-5",
+                id: 3,
+                alias: "Image-3",
                 content: {
-                  src: ".\/\/wp-content\/uploads\/2024\/05\/Epoch.png",
+                  src: ".\/wp-content\/uploads\/2024\/05\/QuantaComputer.png",
                   lib: "medialibrary",
-                  lib_id: 12509,
+                  lib_id: 12512,
                 },
                 size: {
-                  w: ["60px", "60px", "52px", "49px", "45px"],
-                  h: ["35px", "35px", "30px", "29px", "26px"],
+                  w: ["48px", "48px", "63px", "54px", "41px"],
+                  h: ["34px", "34px", "45px", "39px", "29px"],
                   minW: ["none", "none", "none", "none", "none"],
                   minH: ["none", "none", "none", "none", "none"],
                   sProp: true,
                 },
                 pos: {
-                  x: ["506px", "506px", "393px", "269px", "138px"],
-                  y: ["857px", "857px", "655px", "602px", "420px"],
+                  x: ["322px", "322px", "435px", "322px", "189px"],
+                  y: ["779px", "779px", "652px", "595px", "417px"],
                   pos: "absolute",
                   float: ["none", "none", "none", "none", "none"],
                   clear: ["none", "none", "none", "none", "none"],
@@ -6050,23 +5860,23 @@
               },
               {
                 fluid: { tx: true, tr: true, sp: true },
-                id: 6,
-                alias: "Image-6",
+                id: 4,
+                alias: "Image-4",
                 content: {
-                  src: ".\/\/wp-content\/uploads\/2024\/05\/MITILP.png",
+                  src: ".\/wp-content\/uploads\/2024\/05\/QuantaResearch.png",
                   lib: "medialibrary",
-                  lib_id: 12510,
+                  lib_id: 12513,
                 },
                 size: {
-                  w: ["60px", "60px", "54px", "51px", "42px"],
-                  h: ["34px", "34px", "30px", "29px", "24px"],
+                  w: ["48px", "48px", "55px", "49px", "42px"],
+                  h: ["27px", "27px", "30px", "27px", "23px"],
                   minW: ["none", "none", "none", "none", "none"],
                   minH: ["none", "none", "none", "none", "none"],
                   sProp: true,
                 },
                 pos: {
-                  x: ["378px", "378px", "287px", "170px", "61px"],
-                  y: ["857px", "857px", "655px", "602px", "421px"],
+                  x: ["395px", "395px", "532px", "409px", "252px"],
+                  y: ["783px", "783px", "659px", "600px", "420px"],
                   pos: "absolute",
                   float: ["none", "none", "none", "none", "none"],
                   clear: ["none", "none", "none", "none", "none"],
@@ -6168,29 +5978,265 @@
               },
               {
                 fluid: { tx: true, tr: true, sp: true },
-                id: 7,
-                alias: "Copy  image-2",
+                id: 5,
+                alias: "Image-5",
                 content: {
-                  src: ".\/\/wp-content\/uploads\/2024\/06\/StartupIsland.png",
+                  src: ".\/wp-content\/uploads\/2024\/05\/Epoch.png",
                   lib: "medialibrary",
-                  lib_id: 12714,
+                  lib_id: 12509,
                 },
                 size: {
-                  w: ["87px", "87px", "78px", "66px", "60px"],
-                  h: ["32px", "32px", "29px", "25px", "22px"],
+                  w: ["51px", "51px", "56px", "49px", "45px"],
+                  h: ["30px", "30px", "33px", "29px", "26px"],
                   minW: ["none", "none", "none", "none", "none"],
                   minH: ["none", "none", "none", "none", "none"],
                   sProp: true,
                 },
                 pos: {
-                  x: ["858px", "858px", "675px", "553px", "368px"],
-                  y: ["857px", "857px", "655px", "603px", "421px"],
+                  x: ["245px", "245px", "345px", "230px", "117px"],
+                  y: ["782px", "782px", "659px", "602px", "420px"],
                   pos: "absolute",
                   float: ["none", "none", "none", "none", "none"],
                   clear: ["none", "none", "none", "none", "none"],
                 },
-                zIndex: 10,
-                order: 10,
+                zIndex: 16,
+                order: 16,
+                display: ["block", "block", "block", "block", "block"],
+                vA: "top",
+                bg: {
+                  color: {
+                    orig: "transparent",
+                    type: "solid",
+                    string: "transparent",
+                  },
+                },
+                attr: { aO: "ml", tO: "ml" },
+                tl: {
+                  in: {
+                    content: {
+                      pers: "600px",
+                      orig: { x: "50%", y: "50%", z: "0" },
+                      all: [
+                        {
+                          t: 0,
+                          d: 0,
+                          f: 0,
+                          e: "power3.inOut",
+                          pE: "d",
+                          x: [0, 0, 0, 0, 0],
+                          y: [0, 0, 0, 0, 0],
+                          o: 0,
+                          xRe: 0,
+                          yRe: 0,
+                          off: 0,
+                        },
+                        {
+                          t: 1500,
+                          d: 300,
+                          f: 300,
+                          e: "power3.inOut",
+                          pE: "d",
+                          x: [0, 0, 0, 0, 0],
+                          y: [0, 0, 0, 0, 0],
+                          o: 1,
+                          xRe: 0,
+                          yRe: 0,
+                          off: 0,
+                        },
+                      ],
+                    },
+                  },
+                  out: {
+                    content: {
+                      pers: "600px",
+                      orig: { x: "50%", y: "50%", z: "0" },
+                      all: [
+                        {
+                          t: 0,
+                          d: 300,
+                          f: 300,
+                          e: "power3.inOut",
+                          pE: "n",
+                          x: [
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                          ],
+                          y: [
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                          ],
+                          o: 0,
+                          xRe: 0,
+                          yRe: 0,
+                          off: 0,
+                        },
+                      ],
+                    },
+                  },
+                },
+                p: {
+                  t: [0, 0, 0, 0, 0],
+                  b: [0, 0, 0, 0, 0],
+                  l: [0, 0, 0, 0, 0],
+                  r: [0, 0, 0, 0, 0],
+                },
+                m: {
+                  t: [0, 0, 0, 0, 0],
+                  b: [0, 0, 0, 0, 0],
+                  l: [0, 0, 0, 0, 0],
+                  r: [0, 0, 0, 0, 0],
+                },
+                type: "image",
+              },
+              {
+                fluid: { tx: true, tr: true, sp: true },
+                id: 6,
+                alias: "Image-6",
+                content: {
+                  src: ".\/wp-content\/uploads\/2024\/05\/MITILP.png",
+                  lib: "medialibrary",
+                  lib_id: 12510,
+                },
+                size: {
+                  w: ["52px", "52px", "57px", "51px", "42px"],
+                  h: ["29px", "29px", "32px", "29px", "24px"],
+                  minW: ["none", "none", "none", "none", "none"],
+                  minH: ["none", "none", "none", "none", "none"],
+                  sProp: true,
+                },
+                pos: {
+                  x: ["167px", "167px", "249px", "134px", "47px"],
+                  y: ["783px", "783px", "661px", "602px", "421px"],
+                  pos: "absolute",
+                  float: ["none", "none", "none", "none", "none"],
+                  clear: ["none", "none", "none", "none", "none"],
+                },
+                zIndex: 17,
+                order: 17,
+                display: ["block", "block", "block", "block", "block"],
+                vA: "top",
+                bg: {
+                  color: {
+                    orig: "transparent",
+                    type: "solid",
+                    string: "transparent",
+                  },
+                },
+                attr: { aO: "ml", tO: "ml" },
+                tl: {
+                  in: {
+                    content: {
+                      pers: "600px",
+                      orig: { x: "50%", y: "50%", z: "0" },
+                      all: [
+                        {
+                          t: 0,
+                          d: 0,
+                          f: 0,
+                          e: "power3.inOut",
+                          pE: "d",
+                          x: [0, 0, 0, 0, 0],
+                          y: [0, 0, 0, 0, 0],
+                          o: 0,
+                          xRe: 0,
+                          yRe: 0,
+                          off: 0,
+                        },
+                        {
+                          t: 1500,
+                          d: 300,
+                          f: 300,
+                          e: "power3.inOut",
+                          pE: "d",
+                          x: [0, 0, 0, 0, 0],
+                          y: [0, 0, 0, 0, 0],
+                          o: 1,
+                          xRe: 0,
+                          yRe: 0,
+                          off: 0,
+                        },
+                      ],
+                    },
+                  },
+                  out: {
+                    content: {
+                      pers: "600px",
+                      orig: { x: "50%", y: "50%", z: "0" },
+                      all: [
+                        {
+                          t: 0,
+                          d: 300,
+                          f: 300,
+                          e: "power3.inOut",
+                          pE: "n",
+                          x: [
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                          ],
+                          y: [
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                          ],
+                          o: 0,
+                          xRe: 0,
+                          yRe: 0,
+                          off: 0,
+                        },
+                      ],
+                    },
+                  },
+                },
+                p: {
+                  t: [0, 0, 0, 0, 0],
+                  b: [0, 0, 0, 0, 0],
+                  l: [0, 0, 0, 0, 0],
+                  r: [0, 0, 0, 0, 0],
+                },
+                m: {
+                  t: [0, 0, 0, 0, 0],
+                  b: [0, 0, 0, 0, 0],
+                  l: [0, 0, 0, 0, 0],
+                  r: [0, 0, 0, 0, 0],
+                },
+                type: "image",
+              },
+              {
+                fluid: { tx: true, tr: true, sp: true },
+                id: 7,
+                alias: "Copy  image-2",
+                content: {
+                  src: ".\/wp-content\/uploads\/2024\/06\/StartupIsland.png",
+                  lib: "medialibrary",
+                  lib_id: 12714,
+                },
+                size: {
+                  w: ["78px", "78px", "78px", "66px", "60px"],
+                  h: ["29px", "29px", "29px", "25px", "22px"],
+                  minW: ["none", "none", "none", "none", "none"],
+                  minH: ["none", "none", "none", "none", "none"],
+                  sProp: true,
+                },
+                pos: {
+                  x: ["622px", "622px", "617px", "490px", "314px"],
+                  y: ["783px", "783px", "659px", "602px", "422px"],
+                  pos: "absolute",
+                  float: ["none", "none", "none", "none", "none"],
+                  clear: ["none", "none", "none", "none", "none"],
+                },
+                zIndex: 12,
+                order: 12,
                 display: ["block", "block", "block", "block", "block"],
                 vA: "top",
                 bg: {
@@ -6299,14 +6345,14 @@
                 },
                 pos: {
                   x: ["555px", "555px", "426px", "305px", "1px"],
-                  y: ["659px", "659px", "511px", "456px", "317px"],
+                  y: ["636px", "636px", "486px", "435px", "308px"],
                   h: ["left", "left", "left", "left", "center"],
                   pos: "absolute",
                   float: ["none", "none", "none", "none", "none"],
                   clear: ["none", "none", "none", "none", "none"],
                 },
-                zIndex: 8,
-                order: 8,
+                zIndex: 9,
+                order: 9,
                 display: ["block", "block", "block", "block", "block"],
                 vA: "top",
                 bg: {
@@ -6481,26 +6527,26 @@
                 id: 9,
                 alias: "Copy   image-2",
                 content: {
-                  src: ".\/\/wp-content\/uploads\/2024\/06\/ASVDA.png",
+                  src: ".\/wp-content\/uploads\/2024\/06\/ASVDA.png",
                   lib: "medialibrary",
                   lib_id: 12713,
                 },
                 size: {
-                  w: ["90px", "90px", "72px", "68px", "57px"],
-                  h: ["27px", "27px", "21px", "20px", "17px"],
+                  w: ["81px", "81px", "82px", "68px", "57px"],
+                  h: ["24px", "24px", "24px", "20px", "17px"],
                   minW: ["none", "none", "none", "none", "none"],
                   minH: ["none", "none", "none", "none", "none"],
                   sProp: true,
                 },
                 pos: {
-                  x: ["614px", "614px", "476px", "351px", "213px"],
-                  y: ["929px", "929px", "714px", "656px", "463px"],
+                  x: ["725px", "725px", "722px", "584px", "392px"],
+                  y: ["784px", "784px", "660px", "603px", "424px"],
                   pos: "absolute",
                   float: ["none", "none", "none", "none", "none"],
                   clear: ["none", "none", "none", "none", "none"],
                 },
-                zIndex: 9,
-                order: 9,
+                zIndex: 11,
+                order: 11,
                 display: ["block", "block", "block", "block", "block"],
                 vA: "top",
                 bg: {
@@ -6599,26 +6645,27 @@
                 id: 10,
                 alias: "Copy     image-2",
                 content: {
-                  src: ".\/\/wp-content\/uploads\/2024\/07\/CDIB.png",
+                  src: ".\/wp-content\/uploads\/2024\/07\/CDIB.png",
                   lib: "medialibrary",
                   lib_id: 12768,
+                  size: "contain",
                 },
                 size: {
-                  w: ["126px", "126px", "100px", "106px", "69px"],
-                  h: ["25px", "25px", "20px", "21px", "14px"],
+                  w: ["115px", "115px", "110px", "106px", "80px"],
+                  h: ["23px", "23px", "22px", "21px", "16px"],
                   minW: ["none", "none", "none", "none", "none"],
                   minH: ["none", "none", "none", "none", "none"],
                   sProp: true,
                 },
                 pos: {
-                  x: ["749px", "749px", "589px", "465px", "302px"],
-                  y: ["930px", "930px", "715px", "657px", "464px"],
+                  x: ["835px", "835px", "468px", "346px", "204px"],
+                  y: ["784px", "784px", "720px", "656px", "462px"],
                   pos: "absolute",
                   float: ["none", "none", "none", "none", "none"],
                   clear: ["none", "none", "none", "none", "none"],
                 },
-                zIndex: 9,
-                order: 9,
+                zIndex: 10,
+                order: 10,
                 display: ["block", "block", "block", "block", "block"],
                 vA: "top",
                 bg: {
@@ -6713,8 +6760,244 @@
                 type: "image",
               },
               {
-                rTo: "slide",
+                fluid: { tx: true, tr: true, sp: true },
                 id: 11,
+                alias: "Image-11",
+                content: {
+                  src: ".\/wp-content\/uploads\/2024\/07\/TIER.png",
+                  lib: "medialibrary",
+                  lib_id: 12771,
+                },
+                size: {
+                  w: ["142px", "142px", "131px", "107px", "90px"],
+                  h: ["24px", "24px", "22px", "18px", "15px"],
+                  minW: ["none", "none", "none", "none", "none"],
+                  minH: ["none", "none", "none", "none", "none"],
+                  sProp: true,
+                },
+                pos: {
+                  x: ["974px", "974px", "609px", "483px", "306px"],
+                  y: ["783px", "783px", "719px", "657px", "463px"],
+                  pos: "absolute",
+                  float: ["none", "none", "none", "none", "none"],
+                  clear: ["none", "none", "none", "none", "none"],
+                },
+                zIndex: 18,
+                order: 18,
+                display: ["block", "block", "block", "block", "block"],
+                vA: "top",
+                bg: {
+                  color: {
+                    orig: "transparent",
+                    type: "solid",
+                    string: "transparent",
+                  },
+                },
+                attr: { aO: "ml", tO: "ml" },
+                tl: {
+                  in: {
+                    content: {
+                      pers: "600px",
+                      orig: { x: "50%", y: "50%", z: "0" },
+                      all: [
+                        {
+                          t: 0,
+                          d: 0,
+                          f: 0,
+                          e: "power3.inOut",
+                          pE: "d",
+                          x: [0, 0, 0, 0, 0],
+                          y: [0, 0, 0, 0, 0],
+                          o: 0,
+                          xRe: 0,
+                          yRe: 0,
+                          off: 0,
+                        },
+                        {
+                          t: 1500,
+                          d: 300,
+                          f: 300,
+                          e: "power3.inOut",
+                          pE: "d",
+                          x: [0, 0, 0, 0, 0],
+                          y: [0, 0, 0, 0, 0],
+                          o: 1,
+                          xRe: 0,
+                          yRe: 0,
+                          off: 0,
+                        },
+                      ],
+                    },
+                  },
+                  out: {
+                    content: {
+                      pers: "600px",
+                      orig: { x: "50%", y: "50%", z: "0" },
+                      all: [
+                        {
+                          t: 0,
+                          d: 300,
+                          f: 300,
+                          e: "power3.inOut",
+                          pE: "n",
+                          x: [
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                          ],
+                          y: [
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                          ],
+                          o: 0,
+                          xRe: 0,
+                          yRe: 0,
+                          off: 0,
+                        },
+                      ],
+                    },
+                  },
+                },
+                p: {
+                  t: [0, 0, 0, 0, 0],
+                  b: [0, 0, 0, 0, 0],
+                  l: [0, 0, 0, 0, 0],
+                  r: [0, 0, 0, 0, 0],
+                },
+                m: {
+                  t: [0, 0, 0, 0, 0],
+                  b: [0, 0, 0, 0, 0],
+                  l: [0, 0, 0, 0, 0],
+                  r: [0, 0, 0, 0, 0],
+                },
+                type: "image",
+              },
+              {
+                fluid: { tx: true, tr: true, sp: true },
+                id: 12,
+                alias: "Image-12",
+                content: {
+                  src: ".\/wp-content\/uploads\/2024\/07\/banner-title.png",
+                  lib: "medialibrary",
+                  lib_id: 12782,
+                },
+                size: {
+                  w: ["785px", "785px", "628px", "578px", "410px"],
+                  h: ["261px", "261px", "208px", "192px", "136px"],
+                  minW: ["none", "none", "none", "none", "none"],
+                  minH: ["none", "none", "none", "none", "none"],
+                  sProp: true,
+                },
+                pos: {
+                  x: ["254px", "254px", "203px", "101px", "35px"],
+                  y: ["145px", "145px", "85px", "69px", "40px"],
+                  pos: "absolute",
+                  float: ["none", "none", "none", "none", "none"],
+                  clear: ["none", "none", "none", "none", "none"],
+                },
+                zIndex: 6,
+                order: 6,
+                display: ["block", "block", "block", "block", "block"],
+                vA: "top",
+                bg: {
+                  color: {
+                    orig: "transparent",
+                    type: "solid",
+                    string: "transparent",
+                  },
+                },
+                attr: { aO: "ml", tO: "ml" },
+                tl: {
+                  in: {
+                    content: {
+                      pers: "600px",
+                      orig: { x: "50%", y: "50%", z: "0" },
+                      all: [
+                        {
+                          t: 0,
+                          d: 0,
+                          f: 0,
+                          e: "power3.inOut",
+                          pE: "d",
+                          x: [0, 0, 0, 0, 0],
+                          y: [0, 0, 0, 0, 0],
+                          o: 0,
+                          xRe: 0,
+                          yRe: 0,
+                          off: 0,
+                        },
+                        {
+                          t: 580,
+                          d: 300,
+                          f: 300,
+                          e: "power3.inOut",
+                          pE: "d",
+                          x: [0, 0, 0, 0, 0],
+                          y: [0, 0, 0, 0, 0],
+                          o: 1,
+                          xRe: 0,
+                          yRe: 0,
+                          off: 0,
+                        },
+                      ],
+                    },
+                  },
+                  out: {
+                    content: {
+                      pers: "600px",
+                      orig: { x: "50%", y: "50%", z: "0" },
+                      all: [
+                        {
+                          t: 0,
+                          d: 300,
+                          f: 300,
+                          e: "power3.inOut",
+                          pE: "n",
+                          x: [
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                          ],
+                          y: [
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                            "inherit",
+                          ],
+                          o: 0,
+                          xRe: 0,
+                          yRe: 0,
+                          off: 0,
+                        },
+                      ],
+                    },
+                  },
+                },
+                p: {
+                  t: [0, 0, 0, 0, 0],
+                  b: [0, 0, 0, 0, 0],
+                  l: [0, 0, 0, 0, 0],
+                  r: [0, 0, 0, 0, 0],
+                },
+                m: {
+                  t: [0, 0, 0, 0, 0],
+                  b: [0, 0, 0, 0, 0],
+                  l: [0, 0, 0, 0, 0],
+                  r: [0, 0, 0, 0, 0],
+                },
+                type: "image",
+              },
+              {
+                rTo: "slide",
+                id: 13,
                 alias: "Slide BG Layer",
                 subtype: "slidebg",
                 size: { cMode: "cover" },
@@ -6729,9 +7012,9 @@
                 bg: {
                   image: {
                     ratio: 1.9992581602373887,
-                    src: ".\/\/wp-content\/uploads\/2024\/06\/TaiwanSymposium_2024_Website_Banner_FA_Home_Desktop.png",
+                    src: ".\/wp-content\/uploads\/2024\/07\/banner-bg.png",
                     lib: "medialibrary",
-                    lib_id: 12712,
+                    lib_id: 12781,
                     lib_size: "",
                     fromStream: false,
                     streamType: "gallery",
